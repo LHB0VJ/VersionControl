@@ -15,6 +15,9 @@ namespace lhb0vj_7_gyak
         public Form1()
         {
             InitializeComponent();
+            label1.Text = Resource1.LastName; // label1
+            label2.Text = Resource1.FirstName; // label2
+            button1.Text = Resource1.Add; // button1
         }
     }
 }
