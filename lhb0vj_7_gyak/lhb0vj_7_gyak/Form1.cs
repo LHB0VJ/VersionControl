@@ -22,6 +22,7 @@ namespace lhb0vj_7_gyak
             //label2.Text = Resource1.FirstName; // label2
             button1.Text = Resource1.Add; // button1
             button2.Text = Resource1.Save;
+            button3.Text = Resource1.Delete;
 
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
@@ -57,6 +58,11 @@ namespace lhb0vj_7_gyak
                     sw.WriteLine();
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            users.Remove((User)listBox1.SelectedItem);
         }
     }
 }
